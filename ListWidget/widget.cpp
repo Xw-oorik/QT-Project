@@ -92,7 +92,7 @@ void Widget::Deleteitem()
 #else
     //第二种
     int row=ui->listWidget->currentRow();
-    ui->listWidget->takeItem(row);
+    QListWidgetItem *item=ui->listWidget->takeItem(row);
     delete item;
 #endif
 }
