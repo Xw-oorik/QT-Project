@@ -73,11 +73,15 @@ void TcpServer::on_startbutton_clicked()
     else{
         if(server->hasPendingConnections()){//如果服务器正在监听，并且有一个或多个挂起的连接请求
 
-            socket->abort();//中止当前连接并重置Socket。会立即关闭Socket，丢弃写入缓冲区中的任何挂起数据。
+            //socket->abort();//中止当前连接并重置Socket。会立即关闭Socket，丢弃写入缓冲区中的任何挂起数据。
+            socket->disconnectFromHost(); //正常关闭，等着数据写完，socket状态变为未连接，发送disconnect信号
+            socket->waitForDisconnected();///阻塞当前线程，直到套接字的状态变为 UnconnectedState 并发送了 disconnected() 信号
         }
         if(server->isListening()){
             ui->textBrowser_2->append("startbutton server 正在监听连接");
-            socket->abort();  //转到&QTcpSocket::disconnectet
+            //socket->abort();  //转到&QTcpSocket::disconnectet
+            socket->disconnectFromHost(); //正常关闭，等着数据写完，socket状态变为未连接，发送disconnect信号
+            socket->waitForDisconnected();///阻塞当前线程，直到套接字的状态变为 UnconnectedState 并发送了 disconnected() 信号
         }
         else{
             ui->textBrowser_2->append("startbutton server 没有监听");

@@ -116,8 +116,9 @@ void Widget::on_Disconnect_clicked()
     else{
         qDebug()<<socket->state() ;
 
-        socket->disconnectFromHost();
-        socket->waitForDisconnected();
+        socket->disconnectFromHost(); //正常关闭，等着数据写完，socket状态变为未连接，发送disconnect信号
+        socket->waitForDisconnected();///阻塞当前线程，直到套接字的状态变为 UnconnectedState 并发送了 disconnected() 信号
+
     }
 
     qDebug()<<socket->state() ;
