@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/close.svg</file>
+        <file>res/max.svg</file>
+        <file>res/maxmin.svg</file>
+        <file>res/title.svg</file>
+        <file>res/zoom_out.svg</file>
+        <file>res/zoom_out1.png</file>
+        <file>res/open.svg</file>
+        <file>res/max1.svg</file>
+    </qresource>
+</RCC>

@@ -18,4 +18,9 @@ A relatively complete tcp chat box has been implemented. Common errors and bugs 
 <img width="1496" alt="image" src="https://github.com/Xw-oorik/QT-Project/assets/117898635/edf8363c-b331-4a6a-9b2a-a3108a7e689b">
 
 
+
+Adapt borderless windows to each end
+
+![image-20240318003403046](/Users/oorik/Library/Application Support/typora-user-images/image-20240318003403046.png)
+
 **Will continue to update, welcome to star and message!** 
