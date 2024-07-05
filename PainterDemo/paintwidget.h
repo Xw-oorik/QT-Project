@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QPen>
 #include <QBrush>
-
+#include <QPainterPath>
 //C++11 枚举类
 enum class Shape{
 

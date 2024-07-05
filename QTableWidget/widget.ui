@@ -185,7 +185,6 @@
          <font>
           <family>Agency FB</family>
           <pointsize>13</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -204,7 +203,10 @@
           <widget class="QCheckBox" name="rowcheck">
            <property name="font">
             <font>
+             <family>Agency FB</family>
              <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
             </font>
            </property>
            <property name="text">
@@ -216,7 +218,10 @@
           <widget class="QCheckBox" name="colcheck">
            <property name="font">
             <font>
+             <family>Agency FB</family>
              <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
             </font>
            </property>
            <property name="text">
@@ -228,7 +233,10 @@
           <widget class="QCheckBox" name="backcheck">
            <property name="font">
             <font>
+             <family>Agency FB</family>
              <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
             </font>
            </property>
            <property name="text">
@@ -240,7 +248,10 @@
           <widget class="QCheckBox" name="itemeditcheck">
            <property name="font">
             <font>
+             <family>Agency FB</family>
              <pointsize>9</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
             </font>
            </property>
            <property name="text">
@@ -252,7 +263,10 @@
           <widget class="QPushButton" name="qsspushButton">
            <property name="font">
             <font>
+             <family>Agency FB</family>
              <pointsize>10</pointsize>
+             <italic>false</italic>
+             <bold>false</bold>
             </font>
            </property>
            <property name="mouseTracking">
