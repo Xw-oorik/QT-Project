@@ -11,13 +11,13 @@ void SummaryLabel::mousePressEvent(QMouseEvent *event)
 {
     qDebug()<<"SummaryLabel::mousePressEvent";
     qDebug()<<event->isAccepted();
-    //接受事件
-    //event->accept();
-    //qDebug()<<"SummaryLabel::mousePressEvent accept";
+    //接受事件，不会再传递了
+    event->accept();
+    qDebug()<<"SummaryLabel::mousePressEvent accept";
 
     //忽略事件，就会继续传递到父控件(上层窗口)
-    event->ignore();
-    qDebug()<<"SummaryLabel::mousePressEvent ignore";
+   // event->ignore();
+   // qDebug()<<"SummaryLabel::mousePressEvent ignore";
 
 }
 
@@ -38,9 +38,9 @@ bool SummaryLabel::event(QEvent *event)
         //但是返回false的话，表示这个MouseButtonPress事件没有被识别
         //也就是不会走到我们SummaryLabel的mousePressEvent函数，而是跳过他
         //直接走到父类的mousePressEvent函数
-        return false;
+        //return false;
     }
-    //其余没有做判断的事件最后 都会调用父类的控制，也就是会走到父类控件去
+    //if里面如果没有return退出，事件最后 都会调用父类的控制，也就是会走到父类控件去
     //保证其他事件按照默认的分发流程进行分发
     //这个函数一般最后都会这么写
     return QWidget::event(event);

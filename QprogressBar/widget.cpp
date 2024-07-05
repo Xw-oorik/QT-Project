@@ -17,7 +17,6 @@ Widget::Widget(QWidget *parent)
 
     //设置下载的进度在左边
     ui->download->setAlignment(Qt::AlignLeft);
-
     //设置拷贝的进度格式  ,最大最小值
     ui->kaobei->setFormat(QString("%v/%m"));
     ui->kaobei->setRange(0,500);

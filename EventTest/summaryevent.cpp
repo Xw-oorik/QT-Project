@@ -22,6 +22,9 @@ SummaryEvent::SummaryEvent(QWidget *parent) : QWidget(parent)
 
     //注册过滤器
     ql->installEventFilter(this);
+
+    //测试非label的区域
+    //this->installEventFilter(this);
 }
 
 //父类的事件处理，看事件有没有传过来
@@ -37,9 +40,13 @@ bool SummaryEvent::eventFilter(QObject *watched, QEvent *event)
         qDebug()<<" SummaryEvent::eventFilter";
         //return  默认是false
         // return true; //事件到此为止，过滤掉了
-        return false;//事件接着传递
+        //return false;//事件接着传递
 
         //event->ignore();event->accept(); 同样在他里面这两个函数也不起作用
+    }else if(watched!=ql&& event->type()==QEvent::MouseButtonPress){
+        qDebug()<<" SummaryEvent::eventFilter111111";
+
+       // return true;  //传递到这结束，不会往下走到SummaryEvent::mousePressEvent
     }
     return QWidget::eventFilter(watched,event);
 }

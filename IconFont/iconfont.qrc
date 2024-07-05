@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Font/fa-brands-400.ttf</file>
+        <file>Font/fa-regular-400.ttf</file>
+        <file>Font/fa-solid-900.ttf</file>
+        <file>Font/fa-v4compatibility.ttf</file>
+        <file>Font/fontawesome-webfont.ttf</file>
+        <file>Font/iconfont.ttf</file>
+        <file>Font/pe-icon-set-weather.ttf</file>
+    </qresource>
+</RCC>
