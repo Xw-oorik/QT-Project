@@ -28,13 +28,15 @@ This project is the author in the process of learning to use qt experience, each
 
 > **The EventTest project can help you better understand Qt's event delivery process, especially summaryevent and summarylabel. I have detailed comments for you to test by yourself.**
 >
-> ![image-20240705114900344](/Users/oorik/Library/Application Support/typora-user-images/image-20240705114900344.png)
+<img width="679" alt="image" src="https://github.com/Xw-oorik/QT-Project/assets/117898635/d2465d8f-74d0-46d3-af0f-5bede12b8db4">
+
 
 
 
 **Demo of icon font library**
 
-![image-20240705114736051](/Users/oorik/Library/Application Support/typora-user-images/image-20240705114736051.png)
+<img width="1106" alt="image" src="https://github.com/Xw-oorik/QT-Project/assets/117898635/93ce1c9e-c9fb-4068-9251-965c0d112d3f">
+
 
 **Will continue to update, welcome to star and message!** 😄
 
