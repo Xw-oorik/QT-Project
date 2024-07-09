@@ -38,7 +38,8 @@ This project is the author in the process of learning to use qt experience, each
 <img width="1106" alt="image" src="https://github.com/Xw-oorik/QT-Project/assets/117898635/93ce1c9e-c9fb-4068-9251-965c0d112d3f">
 
 
-**Use regular expressions to highlight code syntax
+
+**Use regular expressions to highlight code syntax**
 <img width="1496" alt="image" src="https://github.com/Xw-oorik/QT-Project/assets/117898635/e82d1e6e-5b51-4d4f-a116-1720d5038bb7">
 
 **Will continue to update, welcome to star and message!** 😄
